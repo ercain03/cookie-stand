@@ -40,6 +40,7 @@ function makeLocationRow(storeObj){
   var td = document.createElement('td');
   td.textContent = storeObj.storeCount;
   tr.appendChild(td);
+  console.log('tr ' + tr);
   appendBody.appendChild(tr);
 }
 
@@ -75,8 +76,9 @@ function handleFormInputs(event){
   if(storeFound === true){
     console.log(appendBody);
     var tableBody = document.getElementById('append-table-row');
-    wholeTable.innerHTML = '';
+    appendBody.innerHTML = '';
     for(var i = 0; i < stores.length; i++){
+      console.log('the table loop fired',i);
       makeLocationRow(stores[i]);
     }
   }
