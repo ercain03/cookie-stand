@@ -64,3 +64,8 @@ ul.HorizontalButtons li a {
 ul.HorizontalButtons li a:hover {
   background-color: white;
 }
+
+tr {
+  width:50px;
+
+}
