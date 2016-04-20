@@ -7,23 +7,20 @@
 
 </head>
 <body>
-
-<!-- <h1>Pike Place:</h1>
-  <ul id="pike-cookie-sales"></ul>
-    <p id="pike-total"></p>
-<h1>Seatac Airport:</h1>
-  <ul id="seatac-cookie-sales"></ul>
-    <p id="seatac-total"></p>
-<h1>Bellevue Square:</h1>
-  <ul id="bellevue-cookie-sales"></ul>
-    <p id="bellevue-total"></p>
-<h1>South Center:</h1>
-  <ul id="sc-cookie-sales"></ul>
-    <p id="sc-total"></p>
-<h1>Alki:</h1>
-  <ul id="alki-cookie-sales"></ul>
-    <p id="alki-total"></p>-->
-<table>
+  <form id="submission_form">
+    <fieldset>
+      <label for="storLocation">Location:</label>
+      <input name="storLocation" type="text" required>
+      <label for="minCustomer">Min Customer:</label>
+      <input name="minCustomer" type="text" required>
+      <label for="maxCustomer">Max Customer</label>
+      <input name="maxCustomer" type="text" required>
+      <label for="avgCustomer">Avg Customer:</label>
+      <input name="avgCustomer" type="text" required>
+      <button id="formSubmitBtn" type="submit">Submit</button>
+    </fieldset>
+  </form>
+<table id="whole-table">
   <thead>
     <tr>
       <th>Location</th>
