@@ -1,7 +1,6 @@
 body {
   background-color: brown;
   font-family: 'Helvetica', Verdana, Arial ;
-  color: orange;
 }
 
 .slogan {
@@ -30,7 +29,7 @@ body {
  }
 
  .locations {
-   list-style: none;
+   list-style: none ;
    text-align: center;
  }
 
@@ -63,9 +62,4 @@ ul.HorizontalButtons li a {
 }
 ul.HorizontalButtons li a:hover {
   background-color: white;
-}
-
-tr {
-  width:50px;
-
 }
