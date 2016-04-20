@@ -1,0 +1,26 @@
+tr {
+  width:50px;
+}
+body {
+  background: orange;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+}
+td,th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+}
+
+tbody tr:nth-child(even)  td {
+    background-color: #eee;
+}
+
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
