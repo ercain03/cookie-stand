@@ -7,13 +7,21 @@
 
 </head>
 <body>
-
-<div class="data-in">
-<div class="pike-place">
-  <h1>Pike Place:</h1>
-  <table>
+  <form id="submission_form">
+    <fieldset>
+      <label for="storLocation">Location:</label>
+      <input name="storLocation" type="text" required>
+      <label for="minCustomer">Min Customer:</label>
+      <input name="minCustomer" type="text" required>
+      <label for="maxCustomer">Max Customer</label>
+      <input name="maxCustomer" type="text" required>
+      <label for="avgCustomer">Avg Customer:</label>
+      <input name="avgCustomer" type="text" required>
+      <button id="formSubmitBtn" type="submit">Submit</button>
+    </fieldset>
+  </form>
+<table id="whole-table">
   <thead>
-
     <tr>
       <th>Location</th>
       <th>8:00 am</th>
@@ -29,12 +37,10 @@
       <th>6:00 pm</th>
       <th>Totals</th>
     </tr>
-
   </thead>
-<tbody id="append-table-row"></tbody>
+  <tbody id="append-table-row"></tbody>
 </table>
-</div>
-</div>
+
 <script src="js/app.js"></script>
 
 </body>
