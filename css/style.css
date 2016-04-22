@@ -28,13 +28,13 @@ body {
    color: #333366;
  }
 
- .new-im {
+ /*.new-im {
    width: 440px;
    height: 301px;
    float: right;
    margin-right: 90px;
    margin-top: 20px;
- }
+ }*/
 
  .company-name {
    font-family: 'Chewy', cursive;
@@ -78,4 +78,8 @@ ul.HorizontalButtons li a {
 }
 ul.HorizontalButtons li a:hover {
   background-color: white;
+}
+
+a {
+  color: #333366;
 }
