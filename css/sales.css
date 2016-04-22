@@ -1,26 +1,37 @@
-tr {
-  width:50px;
-}
+/*.flex {
+  display : inline-flex
+}*/
 body {
-  background: orange;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid #bbb;
-}
-td,th {
-    border-top: 1px solid #ddd;
-    padding: 4px 8px;
+  background-color: #8FBC8F;
+  color: #333366;
+  font-weight: bold;
+  font-style: italic;
 }
 
-tbody tr:nth-child(even)  td {
-    background-color: #eee;
+#submission_form {
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 640px) {
-	table {
-		overflow-x: auto;
-		display: block;
-	}
+#formSubmitBtn {
+    margin-right: 10px;
+}
+
+.form-div {
+  margin-left: 20px;
+  padding: 100px 0 0 10px;
+}
+
+.form-button {
+  padding: 129px 0 0 10px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  table td: before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
