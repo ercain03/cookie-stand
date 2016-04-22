@@ -3,23 +3,37 @@
 <head>
 
   <title>Cookie Sales -- Tre</title>
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/sales.css">
 
 </head>
 <body>
-  <form id="submission_form">
-    <fieldset>
-      <label for="storLocation">Location:</label>
-      <input name="storLocation" type="text" required>
-      <label for="minCustomer">Min Customer:</label>
-      <input name="minCustomer" type="text" required>
-      <label for="maxCustomer">Max Customer</label>
-      <input name="maxCustomer" type="text" required>
-      <label for="avgCustomer">Avg Customer:</label>
-      <input name="avgCustomer" type="text" required>
-      <button id="formSubmitBtn" type="submit">Submit</button>
-    </fieldset>
-  </form>
+
+    <form id="submission_form">
+      <div class="row">
+        <div class="three columns">
+          <label class="form-div" for="storLocation">Location:</label>
+          <input class="form-div" name="storLocation" type="text" required>
+        </div>
+        <div class="three columns">
+          <label class="form-div" for="minCustomer">Min Customer:</label>
+          <input class="form-div" name="minCustomer" type="text" required>
+        </div>
+        <div class="three columns">
+          <label class="form-div" for="maxCustomer">Max Customer</label>
+          <input class="form-div" name="maxCustomer" type="text" required>
+        </div>
+        <div class="three columns">
+          <label class="form-div" for="avgCustomer">Avg Customer:</label>
+          <input class="form-div" name="avgCustomer" type="text" required>
+        </div>
+      </div>
+        <div class="form-button">
+          <button class="button-primary" id="formSubmitBtn" type="submit">Submit Inputs</button>
+          <button class="button-primary" id="formClear" type="reset">Reset inputs</button>
+        </div>
+      </form>
+
 <table id="whole-table">
   <thead>
     <tr>
@@ -40,7 +54,9 @@
   </thead>
   <tbody id="append-table-row"></tbody>
 </table>
-
+<form method="link" action="index.html">
+    <input class="button-primary" type="submit" value="Home">
+</form>
 <script src="js/app.js"></script>
 
 </body>

@@ -50,9 +50,13 @@ stores.push(new storeLocation('Southcenter',11,38,1.9));
 stores.push(new storeLocation('Bellevue Square',20,48,3.3));
 stores.push(new storeLocation('Alki',3,24,2.6));
 
-for(var i = 0; i < stores.length; i++) {
-  makeLocationRow(stores[i]);
+function iterateThroughsStoresArr(){
+  for(var i = 0; i < stores.length; i++) {
+    makeLocationRow(stores[i]);
+  }
 }
+
+iterateThroughsStoresArr();
 
 var salesForm = document.getElementById('submission_form');
 
@@ -70,6 +74,9 @@ function handleFormInputs(event){
       stores[i].min = minCusty;
       stores[i].max = maxCusty;
       stores[i].avgCooksPerCustomer = avgCusty;
+      stores[i].arrayA = [];
+      stores[i].storeCount = 0;
+      stores[i].avgPurchasePerHr();
       storeFound = true;
     }
   }
