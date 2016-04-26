@@ -64,9 +64,9 @@ function handleFormInputs(event){
   event.preventDefault();
 
   var location = event.target.storLocation.value;
-  var minCusty = event.target.minCustomer.value;
-  var maxCusty = event.target.maxCustomer.value;
-  var avgCusty = event.target.avgCustomer.value;
+  var minCusty = parseInt(event.target.minCustomer.value);
+  var maxCusty = parseInt(event.target.maxCustomer.value);
+  var avgCusty = parseInt(event.target.avgCustomer.value);
   var storeFound = false;
 
   for(var i = 0; i < stores.length; i++){
